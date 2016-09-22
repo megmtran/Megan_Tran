@@ -7,5 +7,5 @@ p = float (input ("Enter the principal amount: "))
 n = float (input ("Enter the number of times the loan is compounded per year: "))
 t = float (input ("Enter the life of the loan in years: "))
 
-print (loan (r, p, n, t))
+print ("Your total payment amount is",loan (r, p, n, t),".")
 
