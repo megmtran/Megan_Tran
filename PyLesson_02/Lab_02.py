@@ -6,8 +6,9 @@ print (num_01, "multiplied by" ,num_02, "is" ,product)
 name = "Megan Tran"
 address = "\n2555 Calle Mar de Mariposa"
 city = "\nSan Diego"
-zip = "\n92130"
-print (name + address + city + zip)
+zip = "CA 92130"
+print (name + address + city,",",zip)
+
 
 l = 2
 w = 6
