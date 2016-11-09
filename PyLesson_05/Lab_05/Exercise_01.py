@@ -8,5 +8,5 @@ print ("The computer rolled a" , comp, ".")
 if player > comp:
     print ("The winner is you!")
 
-if not player > comp:
+if player < comp:
     print ("The winner is the computer!")
