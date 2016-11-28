@@ -1,9 +1,9 @@
 sent = input("Enter a sentence: ")
-def replace (string):
-    if string.count(" ") == 0:
-        return string 
-    else:
-        return string[0] + "_" + replace(string[1:])
-    print (string)
 
-replace (sent)
+def replace(sent):
+    if sent.count (" ") == 0:
+        return sent
+    else:
+        return sent[0:sent.index(" ")]+ "_" + replace(sent[sent.index(" ")+1:len(sent)])
+    
+print (replace(sent))
