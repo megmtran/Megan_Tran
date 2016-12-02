@@ -1,10 +1,16 @@
-words = [cat, souji, kuroh, mika, kazu]
+words = ["cat", "souji", "kuroh", "mika", "kazu"]
 print ("In order...")
-for i in words:
-    print(words[i])
-print("")
-print("Reversed...")
 output = ""
-for i in range(len(words),0,-1):
-    output += words[i-1]
-print(output)
+
+for i in words:
+    output += i + " "
+print (output)
+
+print("")
+
+print("Reversed...")
+def reverse (array):
+    for i in reversed(array):
+        print (i,end=' ')
+reverse (words)
+
