@@ -1,4 +1,4 @@
-words = ["hub","club","pub","sub","nub"]
+words = ["cat","souji","kuro","mika","kazu"]
 
 def first (lst):
     for i in lst:

@@ -1,3 +1,4 @@
+
 numbers = []
 import random 
 for i in range (0,10):
@@ -5,7 +6,7 @@ for i in range (0,10):
 print ("Numbers...")
 output = ""
 for i in numbers:
-    output += i + " "
+    output += str(i) + " "
 print (output)
 print (" ")
 def average (nums):
