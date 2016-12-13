@@ -5,6 +5,7 @@ for i in range (0,10):
     numbers.append(random.randint(1,100))
 print ("Numbers...")
 output = ""
+
 for i in numbers:
     output += str(i) + " "
 print (output)
