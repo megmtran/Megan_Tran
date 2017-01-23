@@ -7,6 +7,7 @@ class UserNames:
 
     #Modifier
     def setUserName(self,newUser):
+        
         self.userName = newUser
 
     #Accessor

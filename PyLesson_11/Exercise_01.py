@@ -29,3 +29,9 @@ def main():
     values1 = MilesPerHour(dist,hrs,mins)
 
     print(values1.getDist(),"miles in",hrs+mins/60.0,"hours =",values1.getMPH)
+
+    values1.setDist()
+    values1.setHours()
+    values1.setMins()
+
+    print(values1.getDist(),"miles in",hrs+mins/60.0,"hours =",values1.getMPH)
