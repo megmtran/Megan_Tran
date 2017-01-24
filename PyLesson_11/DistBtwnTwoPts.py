@@ -1,7 +1,7 @@
 
 import math
-class Distance:
-    def__init__(self,x1,y1,x2,y2):
+class distance:
+    def __init__(self,x1,y1,x2,y2):
         self.xOne = x1
         self.yOne = y1
         self.xTwo = x2
@@ -14,8 +14,8 @@ class Distance:
         self.yTwo = ny2
 
     def getMPH (self):
-        distance = math.sqrt((xTwo-xOne)*(xTwo-xOne)+(yTwo-yOne)*(yTwo-yOne))
-        return mph
+        self.distance = math.sqrt((self.xTwo-self.xOne)*(self.xTwo-self.xOne)+(self.yTwo-self.yOne)*(self.yTwo-self.yOne))
+        return self.distance
 
 def main ():
     x1 = int(input("Enter the first x-coordinate: "))
@@ -23,6 +23,8 @@ def main ():
     x2 = int(input("Enter the second x-coordinate: "))
     y2 = int(input("Enter the seconf y-coordinate: "))
 
-    dist = coords(x1,y1,x2,y2)
+    coords = distance(x1,y1,x2,y2)
 
-    print("distance = {10.2}".format(dist))
+    print("distance = ",coords.getMPH())
+
+main()

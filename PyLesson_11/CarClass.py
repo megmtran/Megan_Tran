@@ -1,5 +1,5 @@
 class Car:
-    def__init__(self,p,i,e,t):
+    def __init__(self,p,i,e,t):
         self.paint = p
         self.interior = i
         self.engine = e
@@ -26,10 +26,12 @@ def main ():
     engine = input("Enter a choice for engine: ")
     tires = input("Enter a choice for tires: ")
 
-    car = features(paint,interior,engine,tires)
+    features = Car(paint,interior,engine,tires)
 
     print("Your vehicle is ready......")
-    print("Paint:   ",car.getPaint())
-    print("Interior:   ",car.getInterior())
-    print("Engine:   ",car.getEngine())
-    print("Tires:   ",car.getTires())
+    print("Paint:   ",features.getPaint())
+    print("Interior:   ",features.getInterior())
+    print("Engine:   ",features.getEngine())
+    print("Tires:   ",features.getTires())
+
+main()

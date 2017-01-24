@@ -1,6 +1,6 @@
 class UserNames:
     #Constructor
-    def__init__(self, fName, lName, uName):
+    def __init__(self, fName, lName, uName):
         self.firstName = fName
         self.lastName = lName
         self.userName = uName
