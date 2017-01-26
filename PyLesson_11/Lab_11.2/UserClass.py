@@ -1,7 +1,7 @@
 import random
 
 class User:
-    def __init__(self,fName = "",lName = "",avat = ""):
+    def __init__(self,fName,lName,avat = ""):
         self.firstName = fName
         self.lastName = lName
         self.avatar = avat
@@ -16,20 +16,25 @@ class User:
         return self.lastName
     def getAvatar(self):
         return self.avatar
-
-def main():
-    user1 = User()
-    firstName = input("First Name: ")
-    lastName = input("Last Name: ")
-    public = input("Would you like to use a public avatar? Y or N? ")
-    if public == "n":
-        user1 = User(firstName,lastName)
-    else:
-        user1 = User(firstName,lastName,avatar)
+    def getUserID(self):
+        return self.UserID
 
     def __str__(self):
         return "Customer Info...\nFirst Name: " + self.firstName + \
                                "\nLast Name: " + self.lastName + \
                                "\nAvatar: " + self.avatar + \
                                "\nUser ID#: " + str(self.userID)
+
+def main():
+    fName = input("First Name: ")
+    lName = input("Last Name: ")
+    public = input("Would you like to use a public avatar? Y or N? ")
+    if public == "n":
+        user1 = User(fName,lName)
+    else:
+        avat = input("Avatar Name: ")
+        user1 = User(fName,lName,avat)
+    print(user1.__str__())
+        
+
 main()
