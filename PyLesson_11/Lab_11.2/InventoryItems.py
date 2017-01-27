@@ -29,7 +29,7 @@ class Inventory:
         return "Inventory Info...\nManufacturer: " + self.man + \
                                 "\nName: " + self.nm + \
                                 "\nCategory: " + self.cat + \
-                                "\nPrice: " + self.prc + \
+                                "\nPrice: $" + str(self.prc) + \
                                 "\nUPC#: " + str(self.UPC)
 
 def main():
@@ -39,6 +39,8 @@ def main():
     if info == "n":
         item1 = Inventory(manufacturer,name)
     else:
+        category = input("Category: ")
+        price = int(input("Price: "))
         item1 = Inventory(manufacturer,name,category,price)
     print(item1.__str__())
 
