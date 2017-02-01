@@ -11,6 +11,7 @@ while i < len(equation):
         equation.pop(i)
     else:
         i +=1
+
         
 i=0
 while i < len(equation):
