@@ -1,2 +1,15 @@
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC');
+@import url('https://fonts.googleapis.com/css?family=Dosis');
 h1:first-letter{color:red;}
 p:first-line{font-weight:bold;}
+a:hover{color: purple;}
+p {font-family: 'Amatic SC', cursive;
+	font-size: 30px;
+	position: absolute;
+	width: 60%;
+	left: 20%;
+	text-align: center;
+	color: blue;}
+a {font-family: 'Dosis', sans-serif;}
+div > a {color: red;}
+h1 {font-size:40px;}
