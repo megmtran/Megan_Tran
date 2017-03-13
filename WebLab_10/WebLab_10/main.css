@@ -2,3 +2,66 @@
 	margin: 0px;
 	padding: 0px;
 }
+h1 {
+	font: bold 20px Tahoma;
+}
+h2 { 
+	font: bold 14px Tahoma;
+}
+header,section,footer,aside,nav,article,hgroup {
+	display: block;
+}
+body {
+	text-align: center;
+}
+#text {
+	border: 1px solid black;
+	width: 1000px;
+	margin: 20px auto;
+	text-align: left;
+}
+#tHeader {
+	background: #cde5f7;
+	border: 1px solid black;
+	padding: 20px;
+}
+#tMenu {
+	background: #f2a137;
+	color: yellow;
+}
+#tMenu li {
+	display: inline-block;
+	list-style: none;
+	padding: 5px;
+	font: bold 14px Tahoma;
+}
+#mSection {
+	float: left;
+	width: 660px;
+	margin: 30px; /*720 total px, 280 remaining*/
+}
+#sideNews {
+	float: left;
+	width: 220px;
+	margin: 20px 0px;
+	padding: 30px;
+	background: #cde5f7;
+}
+#bFooter {
+	clear: both;
+	text-align: center;
+	padding: 20px;
+	border-top: 2px solid black;
+}
+article {
+	background: #cde5f7;
+	border: 1px solid black;
+	padding: 20px;
+	margin-bottom: 15px;
+}
+article > footer {
+	text-align: right;
+}
+ 
+
+
