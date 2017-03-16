@@ -1,0 +1,41 @@
+#parent {
+	border: 2px solid blue;
+	display: -webkit-box;
+	-webkit-box-orient: horizontal;
+	-webkit-box-pack: center;
+	width: 700px;
+	height: 300px;
+	-webkit-box-align: center;
+}
+#d1 {
+	border: 2px solid red;
+	background: green;
+	padding: 20px;
+	margin: 10px;
+	-webkit-box-ordinal-group: 1;
+	-webkit-box-flex: 1;
+}
+#d2 {
+	border: 2px solid red;
+	background: blue;
+	padding: 20px;
+	margin: 10px;
+	-webkit-box-ordinal-group: 2;
+	-webkit-box-flex: 4;
+}
+#d3 {
+	border: 2px solid red;
+	background: purple;
+	padding: 20px;
+	margin: 10px;
+	-webkit-box-ordinal-group: 3;
+	-webkit-box-flex: 1;
+}
+#d4 {
+	border: 2px solid red;
+	background: red;
+	padding: 20px;
+	margin: 10px;
+	-webkit-box-ordinal-group: 4;
+	-webkit-box-flex: 1;
+}

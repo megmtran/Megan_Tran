@@ -8,7 +8,7 @@ h1 {
 h2 {
 	font: bold 14px Tahoma;
 }
-header, section, footer, aside, nav, article{
+header, section, footer, aside, nav, article, hgroup{
 	display: block;
 }
 
@@ -17,3 +17,70 @@ body {
 	display: -webkit-box;
 	-webkit-box-pack: center;
 }	
+#bWrap {
+	max-width: 1000px;
+	margin: 20px 0px;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-box-flex: 1;
+}
+#tHeader {
+	background: yellow;
+	border: 3px solid black;
+	padding: 20px;
+}
+#tMenu {
+	border: red;
+	background: blue;
+	color: white;
+}
+#tMenu li {
+	display: inline-block;
+	list-style: none;
+	padding: 5px;
+	font: bold 14px Tahoma;
+}
+#flexDiv {
+	display: -webkit-box;
+	-webkit-box-orient: horizontal;
+}
+#mSection {
+	border: 1px solid blue;
+	-webkit-box-flex: 1;
+	margin: 20px;
+	padding: 20px;
+}
+#sideNews {
+	border: 1px solid red;
+	width: 220px;
+	margin: 20px 0px;
+	padding: 30px;
+	background: purple;
+}
+#bFooter {
+	text-align: center;
+	padding: 20px;
+	border-top: 2px solid green;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
