@@ -25,13 +25,13 @@ body {
 	-webkit-box-flex: 1;
 }
 #tHeader {
-	background: yellow;
+	background: #9ab9ea;
 	border: 3px solid black;
 	padding: 20px;
 }
 #tMenu {
 	border: red;
-	background: blue;
+	background: #012359;
 	color: white;
 }
 #tMenu li {
@@ -45,22 +45,26 @@ body {
 	-webkit-box-orient: horizontal;
 }
 #mSection {
-	border: 1px solid blue;
+	background: #e1eaf4;
+	border: 1px solid black;
 	-webkit-box-flex: 1;
 	margin: 20px;
 	padding: 20px;
+	-webkit-box-ordinal-group: 2;
+	-webkit-box-flex: 10000;
 }
 #sideNews {
-	border: 1px solid red;
-	width: 220px;
+	border: 1px solid black;
 	margin: 20px 0px;
 	padding: 30px;
-	background: purple;
-}
+	background: #e1eaf4;
+	-webkit-box-ordinal-group: 1;
+	-webkit-box-flex: 2;
+	}
 #bFooter {
 	text-align: center;
 	padding: 20px;
-	border-top: 2px solid green;
+	border-top: 2px solid black;
 }
 
 
