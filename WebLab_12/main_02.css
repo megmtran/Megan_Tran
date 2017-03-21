@@ -1,0 +1,17 @@
+body {
+	text-align: center;
+}
+#box {
+	font-size: 30px;
+	display: block;
+	width: 180px;
+	margin: 150px; auto;
+	color: #050a4c;
+	height: 80px;
+	background:#bdd5fc;
+	-webkit-border-radius: 10px;
+	-webkit-box-shadow: rgb(110,110,110) 10px 8px;
+}
+#box > p {
+	padding: 20px;
+}
