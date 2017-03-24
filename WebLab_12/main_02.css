@@ -3,15 +3,23 @@ body {
 }
 #box {
 	font-size: 30px;
+	border: 3px solid black;
+	/*outline: 3px solid green;*/
 	display: block;
 	width: 180px;
-	margin: 150px; auto;
-	color: #050a4c;
+	margin: 150px auto;
+	color: white;
 	height: 80px;
-	background:#bdd5fc;
+	/*background:-webkit-linear-gradient(45deg,black,white);*/
+	background: -webkit-radial-gradient(center,circle,black 0%,white 90%);
 	-webkit-border-radius: 10px;
-	-webkit-box-shadow: rgb(110,110,110) 10px 8px;
+	-webkit-box-shadow: rgb(110,110,110) 10px 8px 8px;
+	-webkit-transition: -webkit-transform 0.5s;
 }
 #box > p {
-	padding: 20px;
+	padding: 1px;
+	text-shadow: black 1px 1px 3px;
+}
+#box: hover {
+	-webkit-transform: translate(-30px,-40px) rotate(180deg) scale(1,2);
 }
