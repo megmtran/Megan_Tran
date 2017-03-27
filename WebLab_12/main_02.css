@@ -17,9 +17,8 @@ body {
 	-webkit-transition: -webkit-transform 0.5s;
 }
 #box > p {
-	padding: 1px;
 	text-shadow: black 1px 1px 3px;
 }
-#box: hover {
-	-webkit-transform: translate(-30px,-40px) rotate(180deg) scale(1,2);
+#box:hover {
+	-webkit-transform: translate(-30px,-40px) rotate(180deg) scale(1.2);
 }
