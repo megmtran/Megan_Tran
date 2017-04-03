@@ -1,0 +1,21 @@
+<DOCTYPE html>
+<html lang = "en">
+<head>
+	<meta charset = "UTF-8">
+	<title></title>
+</head>
+<body>
+	<script>
+		function doFirst() {
+			document.write("first<br/>");
+			doSecond();
+		}
+		function doSecond() {
+			document.write("second<br/>");
+			doFirst();
+		}	
+			doFirst();
+		start();
+	</script>
+</body>
+</html>
