@@ -1,39 +1,40 @@
-var x = document.forms.input.username.value;
-var atPos = x.indexOf("@");
-var dotPos = x.lastIndexOf(".");
-var user = ""
-var pass = ""
 
-validate();
 
-function valUser()
+
+
+function valUser(u)
 {
-	if(atPos < 1 || dotPos < atPos + 2 || dotPos + 2 > x.length)
-		user = "f";
+	var atPos = u.indexOf("@");
+	var dotPos = u.lastIndexOf(".");
+	if(atPos < 1 || dotPos < atPos + 2 || dotPos + 2 > u.length)
+		return "f";
 	else
-		user = "t";
+		return "t";
 }
 
-function valPass() {
-	var passL = document.forms.input.passwd.length;
+function valPass(p) {
+	var passL = p.length;
 	if(passL < 6)
-		var pass = "f";
+		return "f";
 	else
-		var pass = "t";
+		return "t";
 }
 
 function validate() 
 {
-	valUser();
-	valPass();
-	
-	if(user = "f" && pass = "f")
+	var userName = document.forms.input.username.value;
+	var passWord = document.forms.input.passwd.value;	
+	user = valUser(userName);
+	pass = valPass(passWord);
+
+
+	if(user == "f" && pass == "f")
 		alert("We were unable to process your request. Please enter a valid email address and a password of at least 6 characters.");
 	else
 	{
-		if(user = "f")
+		if(user == "f")
 			alert("We were unable to process your request. Please enter a valid email address.");
-		if(pass = "f")
+		else if(pass == "f")
 			alert("We were unable to process your request. Please enter a password of at least 6 characters.");
 		else
 			alert("Success!");
