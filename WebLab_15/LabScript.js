@@ -21,5 +21,28 @@ function shapes ()
 	canvas.lineTo(341,515);
 	canvas.closePath();
 	canvas.stroke();
+	var g = canvas.createLinearGradient (20,662,5,648);
+	g.addColorStop(0,"rgb(7, 237, 237)");
+	g.addColorStop(1,"rgb(208, 239, 239)");
+	canvas.fillStyle = g;
+	canvas.beginPath();
+	canvas.moveTo(208,648);
+	canvas.lineTo(208,459);
+	canvas.lineTo(20,459);
+	canvas.lineTo(153,326);
+	canvas.lineTo(20,193);
+	canvas.lineTo(208,193);
+	canvas.lineTo(208,5);
+	canvas.lineTo(341,138);
+	canvas.lineTo(474,5);
+	canvas.lineTo(474,193);
+	canvas.lineTo(662,193);
+	canvas.lineTo(529,326);
+	canvas.lineTo(662,459);
+	canvas.lineTo(474,459);
+	canvas.lineTo(474,648);
+	canvas.lineTo(341,515);
+	canvas.fill();
+	canvas.closePath();
 }
 window.addEventListener("load",shapes,false);
