@@ -23,7 +23,7 @@ function shapes ()
 	canvas.stroke();
 	var g = canvas.createLinearGradient (20,662,5,648);
 	g.addColorStop(0,"rgb(7, 237, 237)");
-	g.addColorStop(1,"rgb(208, 239, 239)");
+	g.addColorStop(1,"rgb(232, 239, 252)");
 	canvas.fillStyle = g;
 	canvas.beginPath();
 	canvas.moveTo(208,648);
