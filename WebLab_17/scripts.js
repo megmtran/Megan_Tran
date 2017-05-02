@@ -2,15 +2,39 @@ function drag() {
 	cat = document.getElementById("catRoll");
 	leftbox = document.getElementById("leftBox");
 	
-	cat.addEventListener("dragstart",starDrag,false);
+	cat.addEventListener("dragstart",startDrag,false);
+	cat.addEventListener("dragend",endDrag,false);
 	
-leftbox.addEventListener("dragenter",function(e)(e.preventDefault()},false);
-	leftbox.addEventListener("dragover",function(e)(e.preventDefault()},false);
+	leftbox.addEventListener("dragenter",dragEnter,false);
+	leftbox.addEventListener("dragleave",dragLeave,false);
+	leftbox.addEventListener("dragover",function(e){e.preventDefault()},false);
 	leftbox.addEventListener("drop",drop,false);
 }
 function startDrag(e) {
 	var pic = '<img id = "catRoll" src = "https://i.ytimg.com/vi/tntOCGkgt98/maxresdefault.jpg">';
-	e.datatranfer.setData('Picture',pic);
+	e.dataTransfer.setData('Picture',pic);
+}
+
+function dragEnter(e) {
+	e.preventDefault();
+	leftbox.style.background = "purple";
+	leftbox.style.border = "3px solid green";
+}
+
+function dragLeave(e) {
+	e.preventDefault();
+	leftbox.style.background = "white"
+	leftbox.style.border = "3px solid black";
+}
+
+function drop(e) {
+	e.preventDefault();
+	leftBox.innerHTML = e.dataTransfer.getData('Picture');
+}
+
+function endDrag(e) {
+	pic = e.target
+	pic.style.visibility = "hidden";
 }
 
 window.addEventListener("load",drag,false);
