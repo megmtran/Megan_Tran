@@ -17,8 +17,8 @@ function startDrag(e) {
 
 function dragEnter(e) {
 	e.preventDefault();
-	leftbox.style.background = "purple";
-	leftbox.style.border = "3px solid green";
+	leftbox.style.background = "#7b8ead";
+	leftbox.style.border = "3px solid #ea3ad3";
 }
 
 function dragLeave(e) {
