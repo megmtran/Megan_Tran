@@ -8,7 +8,7 @@ function mouse()
 function icon(e) 
 {
 	var pic = new Image();
-	pic.src = pic.src = "http://sheltongrp.com/wp-content/uploads/2013/09/Mushrooms.jpg";
+	pic.src = pic.src = "http://www.h3daily.com/wp-content/uploads/2009/08/ButtonMushroom-fb.jpg";
 	canvas.clearRect(0,0,700,700);
 	var xPos = e.clientX;
 	var yPos = e.clientY;
